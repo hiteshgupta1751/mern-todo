@@ -3,7 +3,7 @@ import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
-const API_BASE = "http://13.53.45.43:5000/api/todos";
+const API_BASE = "http://16.16.194.169:5000/api/todos";
 
 function AddTodo({ todos, setTodos }) {
     const [editMode, setEditMode] = useState(false);

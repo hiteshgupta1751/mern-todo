@@ -14,7 +14,8 @@ pipeline {
             steps {
                 sh '''
                     cd $WORKSPACE
-                    docker compose down
+                    # Stop and remove existing containers to avoid name conflicts
+                    docker compose down --remove-orphans
                     docker compose up -d --build
                 '''
             }

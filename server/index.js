@@ -23,7 +23,7 @@ function deleteItemIndex(arr, id) {
 
 app.use(bodyParser.json());
 app.use(cors({
-  origin: ["http://13.53.45.43"],
+  origin: ["http://16.16.194.169"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"]
 }));

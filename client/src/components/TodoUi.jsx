@@ -8,7 +8,7 @@ function TodoUi({ darkMode, setTodos }) {
     const [description, setDescription] = useState('');
 
     const handleTodo = (title, description) => {
-        fetch("http://13.53.45.43:5000/todos", {
+        fetch("http://16.16.194.169:5000/todos", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -19,7 +19,7 @@ function TodoUi({ darkMode, setTodos }) {
             })
         }).then((resp) => {
             // Fetch the updated list of todos after adding a new todo
-            fetch("http://13.53.45.43:5000/todos", {
+            fetch("http://16.16.194.169:5000/todos", {
                 method: "GET",
             }).then((resp) => {
                 resp.json().then((data) => {

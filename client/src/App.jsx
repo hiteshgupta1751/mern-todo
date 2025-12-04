@@ -15,7 +15,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch("http://13.53.45.43:5000/todos", {
+    fetch("http://16.16.194.169:5000/todos", {
       method: "GET",
     }).then((resp) => {
       resp.json().then((data) => {
