@@ -13,7 +13,7 @@ pipeline {
         stage('Update Local Project') {
             steps {
                 sh '''
-                    cd /root/mern-todo
+                    cd $WORKSPACE
                     git pull
                 '''
             }
@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy App') {
             steps {
                 sh '''
-                    cd /root/mern-todo
+                    cd $WORKSPACE
                     docker compose down
                     docker compose up -d --build
                 '''
