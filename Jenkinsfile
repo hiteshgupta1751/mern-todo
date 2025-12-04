@@ -10,15 +10,6 @@ pipeline {
             }
         }
 
-        stage('Update Local Project') {
-            steps {
-                sh '''
-                    cd $WORKSPACE
-                    git pull
-                '''
-            }
-        }
-
         stage('Deploy App') {
             steps {
                 sh '''
